@@ -1,0 +1,10 @@
+name: TrollPlugin
+version: 0.1
+author: VCoding
+main: me.vcoding.trollplugin.Main
+
+commands:
+  troll:
+   description: The one and only command to troll the players
+   aliases: t
+   permission: troll.command
