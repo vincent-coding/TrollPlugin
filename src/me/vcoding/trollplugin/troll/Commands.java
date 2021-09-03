@@ -28,8 +28,7 @@ public class Commands implements CommandExecutor {
 				Player target = Bukkit.getPlayer(args[1]);
 				
 				if(target != null && target.isOnline()) {
-					//TODO: Supprimer ce !
-					if(!target.hasPermission("troll.bypass")) {
+					if(target.hasPermission("troll.bypass")) {
 						player.sendMessage(Utils.Error + "ChatCan't troll " + ChatColor.DARK_RED + target.getName() + ChatColor.RED + " because he has permission: " + ChatColor.DARK_RED + "troll.bypass");
 					} else {
 						switch(args[0].toLowerCase()) {
